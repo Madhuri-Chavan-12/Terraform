@@ -80,34 +80,8 @@ terraform.tf   → backend & version settings
 
 - Separating files improves readability and maintainability.
 
-### 4. Variables
 
-- Hardcoding values is a bad practice. Variables make code reusable.
-```
-variable "instance_type" {
-  default = "t2.micro"
-}
-```
-
-Usage:
-```
-instance_type = var.instance_type
-```
-
-- This allows the same code to be used across dev, test, and prod environments.
-
-### 5. Outputs
-
-- Outputs expose important information after infrastructure creation.
-```
-output "public_ip" {
-  value = aws_instance.web.public_ip
-}
-```
-
-This prints the EC2 public IP after apply.
-
-### Terraform Workflow 
+### 4. Terraform Workflow 
 
 **1. Initialize**
 ```
