@@ -80,4 +80,3 @@ Terraform workspaces are:
 * Same code, multiple environments
 * Simple but limited
 
-Good for **small to medium projects**, not for complex multi-account setups.
